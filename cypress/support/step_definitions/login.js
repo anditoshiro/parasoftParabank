@@ -1,6 +1,6 @@
-const { When, Then } = require("@badeball/cypress-cucumber-preprocessor");
+const { When, Then, Given } = require("@badeball/cypress-cucumber-preprocessor");
 
-When("User is at landing page", () => {
+Given("User is at landing page", () => {
   cy.visit(Cypress.config().baseUrl);
 });
 
